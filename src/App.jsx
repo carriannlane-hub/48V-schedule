@@ -219,16 +219,16 @@ function formatTimeForDisplay(date, showSententralTime) {
   return date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
 }
 
-// Get type badge styling
+// Get type badge styling - colors chosen for 4.5:1 contrast with white text
 function getTypeBadge(type) {
   const styles = {
-    playshop: { bg: 'bg-amber-500', text: 'text-white', label: 'Playshop' },
-    keynote: { bg: 'bg-red-500', text: 'text-white', label: 'Keynote' },
-    panel: { bg: 'bg-purple-600', text: 'text-white', label: 'Panel' },
-    talk: { bg: 'bg-sky-600', text: 'text-white', label: 'Talk' },
-    game: { bg: 'bg-emerald-500', text: 'text-white', label: 'Game' },
-    sponsor: { bg: 'bg-orange-500', text: 'text-white', label: 'Sponsor' },
-    intro: { bg: 'bg-slate-500', text: 'text-white', label: 'Welcome' }
+    playshop: { bg: 'bg-amber-700', text: 'text-white', label: 'Playshop' },
+    keynote: { bg: 'bg-red-700', text: 'text-white', label: 'Keynote' },
+    panel: { bg: 'bg-purple-700', text: 'text-white', label: 'Panel' },
+    talk: { bg: 'bg-sky-700', text: 'text-white', label: 'Talk' },
+    game: { bg: 'bg-emerald-700', text: 'text-white', label: 'Game' },
+    sponsor: { bg: 'bg-orange-700', text: 'text-white', label: 'Sponsor' },
+    intro: { bg: 'bg-slate-600', text: 'text-white', label: 'Welcome' }
   };
   return styles[type] || styles.talk;
 }
@@ -418,6 +418,14 @@ export default function GamiCon48VSchedule() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+      {/* Skip to main content link - visible only when focused */}
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-amber-500 focus:text-slate-900 focus:font-semibold focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+      >
+        Skip to main content
+      </a>
+
       {/* Decorative background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
@@ -466,7 +474,9 @@ export default function GamiCon48VSchedule() {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Main content */}
+      <main id="main-content">
+        {/* Hero Section */}
       <section className="relative z-10 px-4 py-12 sm:py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <p className="text-amber-400 uppercase tracking-widest text-xs sm:text-sm mb-4" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
@@ -556,7 +566,7 @@ export default function GamiCon48VSchedule() {
       )}
 
       {/* Time Zone Toggle */}
-      <section className="relative z-10 px-4 py-4 sm:py-8 sm:sticky top-0 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 shadow-xl">
+      <section className="relative z-30 px-4 py-4 sm:py-8 sm:sticky top-0 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 shadow-xl">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-center sm:text-left">
             <h4 className="text-white font-semibold" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
@@ -572,7 +582,7 @@ export default function GamiCon48VSchedule() {
             aria-pressed={showSententralTime}
             aria-label={showSententralTime ? 'Switch to local time' : 'Switch to Sententral Time'}
           >
-            <span className={`text-xs sm:text-sm font-medium ${!showSententralTime ? 'text-amber-400' : 'text-slate-400'}`}>
+            <span className={`text-xs sm:text-sm font-medium ${!showSententralTime ? 'text-amber-300' : 'text-slate-300'}`}>
               Local
             </span>
             <div className="relative w-12 sm:w-14 h-6 sm:h-7 bg-slate-600 rounded-full">
@@ -582,7 +592,7 @@ export default function GamiCon48VSchedule() {
                 }`}
               ></div>
             </div>
-            <span className={`text-xs sm:text-sm font-medium ${showSententralTime ? 'text-amber-400' : 'text-slate-400'}`}>
+            <span className={`text-xs sm:text-sm font-medium ${showSententralTime ? 'text-amber-300' : 'text-slate-300'}`}>
               Sententral
             </span>
           </button>
@@ -713,6 +723,7 @@ export default function GamiCon48VSchedule() {
           ))}
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="relative z-10 px-4 py-8 border-t border-slate-700">
