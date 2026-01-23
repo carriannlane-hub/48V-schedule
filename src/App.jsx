@@ -9,7 +9,7 @@ const scheduleData = [
     centralEnd: "1:00 AM",
     gmtStart: "2026-03-22T00:00:00Z",
     gmtEnd: "2026-03-22T06:00:00Z",
-    host: "James Bishop",
+    host: "James Bishop and Jimbo Clark",
     regions: "East Asia • Southeast Asia • Oceania",
     sessions: [
       { time: "00:00", speaker: "James Bishop", title: "Intro to Event", type: "intro", country: "Hong Kong" },
@@ -32,7 +32,7 @@ const scheduleData = [
     centralEnd: "7:00 AM",
     gmtStart: "2026-03-22T06:00:00Z",
     gmtEnd: "2026-03-22T12:00:00Z",
-    host: "Moe Ash & Zunara",
+    host: "Moe Ash & Zunara Nauman",
     regions: "Middle East • South Asia • East Africa",
     sessions: [
       { time: "06:00", speaker: "Moe Ash", title: "Intro Block", type: "intro", country: "UAE" },
@@ -42,7 +42,8 @@ const scheduleData = [
         description: "Use a simple bead-based activity to uncover your decision-making patterns. Discover avoidance, impulse, and intention through play and reflection." },
       { time: "08:00", speaker: "Darwin Sy Antipolo", title: "WANTED: Games for Developing Future(s)-ready Leaders", type: "talk", country: "Philippines",
         description: "Respond to the call! Explore how game principles and mechanics can build futures-thinking capabilities in leaders facing uncertainty." },
-      { time: "08:30", speaker: "Zunara Nauman", title: "Session TBA", type: "talk", country: "Pakistan" },
+      { time: "08:30", speaker: "Zunara Nauman", title: "Blitzscaling: When Speed Matters", type: "talk", country: "Pakistan",
+        description: "Learn how to launch small, useful learning experiences quickly and improve through short, focused cycles. Start with a single game loop that teaches one critical behavior, then expand only after it proves its value." },
       { time: "09:00", speaker: "Janet Livingstone", title: "Naming, Framing, and Gaming: The Multiplicity Inside", type: "talk", country: "USA/Slovakia",
         description: "Discover Internal Family Systems (IFS) as a gamified leadership development tool. Learn visualization techniques for exploring your inner multiplicity." },
       { time: "10:00", speaker: "Rihan Mustapha", title: "GameFrame in Action: Bringing Purpose, Play, and Progress to Adult Learning", type: "playshop", country: "Saudi Arabia",
@@ -62,8 +63,9 @@ const scheduleData = [
       { time: "12:00", speaker: "Bernardo Letayf & Roman Rackwitz", title: "Intro Block", type: "intro", country: "Mexico/Germany" },
       { time: "12:30", speaker: "Thiago Barrionuevo", title: "Dungeon Master", type: "playshop", country: "Portugal",
         description: "Transform learning through game-based dynamics. Experience the Octalysis Framework in action and apply gamification to your own professional challenges." },
-      { time: "14:30", speaker: "Alina Tudorache", title: "The Gamification Layer Every Profitable DAO Needs in 2026", type: "talk", country: "Romania",
+      { time: "14:00", speaker: "Alina Tudorache", title: "The Gamification Layer Every Profitable DAO Needs in 2026", type: "talk", country: "Romania",
         description: "Most DAOs die of apathy, not tech failure. Discover the missing behavior layer that turns ghost-town communities into thriving ecosystems." },
+      { time: "14:30", speaker: "Cedric Pontet", title: "TBA", type: "talk", country: "France" },
       { time: "15:00", speaker: "Claudio Guz", title: "Vibe Game Coding: Creating Games at the Speed of Imagination", type: "talk", country: "Argentina",
         description: "Create games through conversation, not code. Watch ideas become mechanics instantly through real-time AI collaboration." },
       { time: "16:00", speaker: "Joshua Yavelberg", title: "The Clockwork Prototype Lab: Gamifying Be AI-gile", type: "playshop", country: "USA",
@@ -103,7 +105,8 @@ const scheduleData = [
       { time: "00:00", speaker: "Jimbo Clark", title: "Intro Block", type: "intro", country: "Australia" },
       { time: "00:30", speaker: "Carriann Lane", title: "Build It Live: Creating Simple Apps Without Writing Code", type: "playshop", country: "USA",
         description: "What if you could create and build an app in 90 minutes without writing code? Together, we'll build an accessible branching scenario you can deploy anywhere using free, simple tools." },
-      { time: "02:00", speaker: "TBA", title: "Funding Panel", type: "panel", country: "" },
+      { time: "02:00", speaker: "Chuck Sigmund, Christian Gossan, Vaughn O'Leary", title: "Panel: Fund the Fun: Making the Business Case for Gamification", type: "panel", country: "USA",
+        description: "No matter how strong your learning design is, it won't go anywhere without funding. Panelists share real-world strategies for positioning gamification as a business investment." },
       { time: "03:00", speaker: "Shireen Chua, PhD", title: "When Cultures Clash, Immunities Surface: Game-Based Action Inquiry for Adaptive Leadership", type: "talk", country: "New Zealand",
         description: "Explore how game-based experiences reveal hidden commitments and cultural immunity to change. Design for breakthrough, not just engagement." },
       { time: "04:00", speaker: "Meike Sauerwein", title: "From Farm to Fridge: The Milk Life Cycle Challenge", type: "game", country: "Hong Kong",
@@ -129,10 +132,9 @@ const scheduleData = [
         description: "Every game contains an underlying system that shapes what players learn, feel, and do. Discover the invisible architecture of gamified experiences." },
       { time: "08:00", speaker: "Namitha Vijayakumar", title: "Designing Card Games for Learning", type: "talk", country: "India",
         description: "From engineer to behavioral skills trainer—learn practical techniques for designing card-based learning games." },
-      { time: "09:00", speaker: "Bhaskar Thyagarajan", title: "Don't Wing It! When Games Tell the Truth: Data-based Debriefing for High-Impact Behavioral Learning", type: "playshop", country: "India",
-        description: "Move beyond subjective facilitation. Learn breakthrough techniques for data-driven debriefing that proves learning impact." },
-      { time: "10:30", speaker: "Ayman Elarby", title: "Feedback Marvels", type: "talk", country: "Egypt",
-        description: "Give and receive professional feedback through a board game designed with game-based learning principles." }
+      { time: "09:00", speaker: "Joris Beerda", title: "TBA", type: "talk", country: "Netherlands" },
+      { time: "10:00", speaker: "Bhaskar Thyagarajan", title: "Don't Wing It! When Games Tell the Truth: Data-based Debriefing for High-Impact Behavioral Learning", type: "playshop", country: "India",
+        description: "Move beyond subjective facilitation. Learn breakthrough techniques for data-driven debriefing that proves learning impact." }
     ]
   },
   {
@@ -145,10 +147,14 @@ const scheduleData = [
     host: "Isobel Wallace (Thinking Cap)",
     regions: "Europe • Americas • Africa",
     sessions: [
-      { time: "12:30", speaker: "Monica Cornetti, Marigo Raftopoulos, David Metcalf, Rasha Morsi", title: "Panel: Future of Gamification", type: "panel", country: "Global" },
-      { time: "14:00", speaker: "Alan Mattiassi", title: "Beyond Fun: A Novel Psychological Framework for Games and Behavioral Change", type: "talk", country: "Italy",
-        description: "Current research is fragmented. Discover an integrated psychological framework that unifies motivation, engagement, and design into testable principles." },
-      { time: "16:00", speaker: "Julia Allen & Frank Parker", title: "Worldbuilding in GoBrunch: Enhancing User Experiences Through Design Concepts", type: "playshop", country: "USA",
+      { time: "12:00", speaker: "Isobel Wallace", title: "Intro Block", type: "intro", country: "UK" },
+      { time: "12:30", speaker: "Monica Cornetti, Marigo Raftopoulos, David Metcalf, Rasha Morsi", title: "Panel: AI Hardcoded Bias: UX, AI, and the Human Cost of Design", type: "panel", country: "Global",
+        description: "This panel examines how algorithmic systems in healthcare, education, and the workplace often reinforce gendered assumptions, shaping who benefits, who is seen, and who is left out." },
+      { time: "13:30", speaker: "Isobel Wallace", title: "ThinkingCap", type: "sponsor", country: "UK" },
+      { time: "14:00", speaker: "Ayman Elarby", title: "Feedback Marvels", type: "talk", country: "Egypt",
+        description: "Give and receive professional feedback through a board game designed with game-based learning principles." },
+      { time: "15:00", speaker: "Darryn Van Den Berg", title: "TBA", type: "talk", country: "South Africa" },
+      { time: "15:30", speaker: "Julia Allen & Frank Parker", title: "Worldbuilding in GoBrunch: Enhancing User Experiences Through Design Concepts", type: "playshop", country: "USA",
         description: "Turn virtual platforms into story-rich environments. Hands-on exploration of world-building that surprises and delights." }
     ]
   },
@@ -169,7 +175,8 @@ const scheduleData = [
         description: "Build problem-based learning for online training using AI prompts. Design gameworlds rooted in compassion research." },
       { time: "20:30", speaker: "Javier Velasquez", title: "100 Victory Points for Designing Great Point Systems that Teach!", type: "playshop", country: "Colombia",
         description: "Identify point types, understand their psychological value, and design meaningful point systems that actually drive learning." },
-      { time: "22:30", speaker: "Keith Lillico", title: "Session TBA", type: "talk", country: "Canada" }
+      { time: "22:30", speaker: "Keith Lillico", title: "\"Tell Me Why\": What Toddlers, Boy Bands, and Learners Teach Us About Motivation", type: "talk", country: "Canada",
+        description: "Examine the underlying ecosystem of human motivation that shapes engagement across very different contexts, from early learning to enterprise compliance. Learn a practical framework for identifying the often-hidden motivations of an audience." }
     ]
   }
 ];
@@ -251,6 +258,54 @@ function getTypeBadge(type) {
     intro: { bg: 'bg-slate-600', text: 'text-white', label: 'Welcome' }
   };
   return styles[type] || styles.talk;
+}
+
+// Generate ICS calendar file for a session
+function generateICS(session, sessionIndex, block) {
+  const startTime = getSessionStartTime(session, block);
+  const endTime = getSessionEndTime(session, sessionIndex, block);
+  
+  // Format date for ICS (YYYYMMDDTHHMMSSZ)
+  const formatICSDate = (date) => {
+    return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  };
+  
+  const title = `GamiCon48V: ${session.title}`;
+  const description = [
+    `Speaker: ${session.speaker}`,
+    session.country ? `Location: ${session.country}` : '',
+    session.description || '',
+    '',
+    'GamiCon48V 2026 - 48 Hours of Playful Learning'
+  ].filter(Boolean).join('\\n');
+  
+  const icsContent = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//GamiCon48V//Schedule//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    `DTSTART:${formatICSDate(startTime)}`,
+    `DTEND:${formatICSDate(endTime)}`,
+    `SUMMARY:${title}`,
+    `DESCRIPTION:${description}`,
+    `UID:gamicon48v-2026-block${block.block}-session${sessionIndex}@gamicon.com`,
+    'STATUS:CONFIRMED',
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+  
+  // Create and trigger download
+  const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `GamiCon48V-${session.title.replace(/[^a-zA-Z0-9]/g, '-').substring(0, 30)}.ics`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 }
 
 export default function GamiCon48VSchedule() {
@@ -373,6 +428,7 @@ export default function GamiCon48VSchedule() {
   // Render a session card (reusable for Happening Now, Up Next, and schedule)
   const renderSessionCard = (session, block, isHighlighted = false, highlightLabel = '') => {
     const badge = getTypeBadge(session.type);
+    const sessionIndex = block.sessions.findIndex(s => s === session);
     
     return (
       <div 
@@ -413,14 +469,14 @@ export default function GamiCon48VSchedule() {
                     {session.country}
                   </span>
                 )}
-                <span className="text-slate-400 text-sm">
+                <span className="text-slate-300 text-sm">
                   • Block {block.block}
                 </span>
               </div>
               <h5 className="text-xl font-semibold text-white mb-1" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
                 {session.title}
               </h5>
-              <p className="text-sky-400 text-sm mb-2">
+              <p className="text-sky-300 text-sm mb-2">
                 {session.speaker}
                 {session.country && <span className="md:hidden text-slate-300"> • {session.country}</span>}
               </p>
@@ -429,6 +485,17 @@ export default function GamiCon48VSchedule() {
                   {session.description}
                 </p>
               )}
+              {/* Add to Calendar button */}
+              <button
+                onClick={() => generateICS(session, sessionIndex, block)}
+                className="mt-3 w-full sm:w-auto inline-flex items-center justify-center sm:justify-start gap-2 px-4 py-3 sm:py-2.5 text-sm text-slate-300 bg-slate-700/50 hover:bg-slate-600 active:bg-slate-500 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800 min-h-[44px]"
+                aria-label={`Add ${session.title} to calendar`}
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Add to Calendar
+              </button>
             </div>
           </div>
         </div>
@@ -478,14 +545,14 @@ export default function GamiCon48VSchedule() {
               <h1 className="text-xl sm:text-2xl font-bold text-white" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
                 GamiCon<span className="text-amber-400">48V</span>
               </h1>
-              <p className="text-slate-400 text-xs sm:text-sm">2026</p>
+              <p className="text-slate-300 text-xs sm:text-sm">2026</p>
             </div>
           </div>
           {/* Live indicator */}
           {eventStatus.status === 'during' && (
             <div className="flex items-center gap-2 px-4 py-2 bg-emerald-900/50 border border-emerald-500/50 rounded-full">
               <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="motion-safe:animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
               </span>
               <span className="text-emerald-300 font-semibold text-sm" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>LIVE</span>
@@ -504,7 +571,7 @@ export default function GamiCon48VSchedule() {
           </p>
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
             48 Hours of<br />
-            <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-red-400 bg-clip-text text-transparent supports-[background-clip:text]:text-transparent text-amber-400">
               Playful Learning
             </span>
           </h2>
@@ -526,7 +593,7 @@ export default function GamiCon48VSchedule() {
               <p className="text-lg text-slate-300 mb-4">
                 GamiCon48V 2026 has concluded. We hope you had an amazing 48 hours of playful learning!
               </p>
-              <p className="text-slate-400">
+              <p className="text-slate-300">
                 Stay tuned for recordings and next year's event.
               </p>
             </div>
@@ -543,7 +610,7 @@ export default function GamiCon48VSchedule() {
               <h3 className="text-3xl sm:text-4xl font-bold text-white mb-2" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
                 📅 Live Schedule
               </h3>
-              <p className="text-slate-400 text-sm">
+              <p className="text-slate-300 text-sm">
                 Auto-updates every minute • Last updated: {currentTime.toLocaleTimeString()}
               </p>
             </div>
@@ -592,27 +659,27 @@ export default function GamiCon48VSchedule() {
             <h4 className="text-white font-semibold" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
               {eventStatus.status === 'during' ? 'Remaining Sessions' : 'Session Schedule'}
             </h4>
-            <p className="text-slate-400 text-sm">
+            <p className="text-slate-300 text-sm">
               {showSententralTime ? 'Sententral Time (Central US)' : `Your local time (${userTimezone})`}
             </p>
           </div>
           <button
             onClick={() => setShowSententralTime(!showSententralTime)}
-            className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-slate-700 rounded-full hover:bg-slate-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+            className="flex items-center gap-3 px-5 py-3 bg-slate-700 rounded-full hover:bg-slate-600 active:bg-slate-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 min-h-[48px]"
             aria-pressed={showSententralTime}
             aria-label={showSententralTime ? 'Switch to local time' : 'Switch to Sententral Time'}
           >
-            <span className={`text-xs sm:text-sm font-medium ${!showSententralTime ? 'text-amber-300' : 'text-slate-300'}`}>
+            <span className={`text-sm font-medium ${!showSententralTime ? 'text-amber-300' : 'text-slate-300'}`}>
               Local
             </span>
-            <div className="relative w-12 sm:w-14 h-6 sm:h-7 bg-slate-600 rounded-full">
+            <div className="relative w-14 h-7 bg-slate-600 rounded-full">
               <div 
-                className={`absolute top-1 w-4 sm:w-5 h-4 sm:h-5 bg-amber-400 rounded-full transition-all duration-300 ${
-                  showSententralTime ? 'left-6 sm:left-8' : 'left-1'
+                className={`absolute top-1 w-5 h-5 bg-amber-400 rounded-full transition-all duration-300 ${
+                  showSententralTime ? 'left-8' : 'left-1'
                 }`}
               ></div>
             </div>
-            <span className={`text-xs sm:text-sm font-medium ${showSententralTime ? 'text-amber-300' : 'text-slate-300'}`}>
+            <span className={`text-sm font-medium ${showSententralTime ? 'text-amber-300' : 'text-slate-300'}`}>
               Sententral
             </span>
           </button>
@@ -630,7 +697,7 @@ export default function GamiCon48VSchedule() {
               {/* Block Header */}
               <button
                 onClick={() => setExpandedBlock(expandedBlock === block.block ? null : block.block)}
-                className="w-full px-6 py-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-slate-700/30 transition-colors text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-amber-400"
+                className="w-full px-4 sm:px-6 py-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-slate-700/30 active:bg-slate-700/50 transition-colors text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-amber-400 min-h-[72px]"
                 aria-expanded={expandedBlock === block.block}
               >
                 <div className="flex items-center gap-4">
@@ -649,18 +716,18 @@ export default function GamiCon48VSchedule() {
                         : `${convertToLocal(block.gmtStart.slice(11, 16), block.gmtStart)} – ${convertToLocal(block.gmtEnd.slice(11, 16), block.gmtEnd)} Local`
                       }
                     </p>
-                    <p className="text-slate-400 text-sm mt-1 md:hidden">
-                      Hosted by <span className="text-slate-300">{block.host}</span>
+                    <p className="text-slate-300 text-sm mt-1 md:hidden">
+                      Hosted by <span className="text-white">{block.host}</span>
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="text-right hidden md:block">
                     <p className="text-slate-300 text-sm">Hosted by <span className="text-white font-medium">{block.host}</span></p>
-                    <p className="text-slate-400 text-sm">{block.regions}</p>
+                    <p className="text-slate-300 text-sm">{block.regions}</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-slate-400 text-sm">{block.sessions.length} sessions</span>
+                    <span className="text-slate-300 text-sm">{block.sessions.length} sessions</span>
                     <svg 
                       className={`w-6 h-6 text-slate-400 transition-transform ${expandedBlock === block.block ? 'rotate-180' : ''}`} 
                       fill="none" 
@@ -710,7 +777,7 @@ export default function GamiCon48VSchedule() {
                                 {badge.label}
                               </span>
                               {isCurrentSession && (
-                                <span className="px-3 py-1 bg-emerald-500 text-white text-xs font-semibold rounded-full animate-pulse">
+                                <span className="px-3 py-1 bg-emerald-500 text-white text-xs font-semibold rounded-full motion-safe:animate-pulse">
                                   LIVE NOW
                                 </span>
                               )}
@@ -723,7 +790,7 @@ export default function GamiCon48VSchedule() {
                             <h5 className="text-base sm:text-lg font-semibold text-white mb-1" style={{ fontFamily: 'Josefin Sans, sans-serif' }}>
                               {session.title}
                             </h5>
-                            <p className="text-sky-400 text-sm mb-2">
+                            <p className="text-sky-300 text-sm mb-2">
                               {session.speaker}
                               {session.country && <span className="md:hidden text-slate-300"> • {session.country}</span>}
                             </p>
@@ -732,6 +799,20 @@ export default function GamiCon48VSchedule() {
                                 {session.description}
                               </p>
                             )}
+                            {/* Add to Calendar button */}
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                generateICS(session, idx, block);
+                              }}
+                              className="mt-3 w-full sm:w-auto inline-flex items-center justify-center sm:justify-start gap-2 px-4 py-3 sm:py-2.5 text-sm text-slate-300 bg-slate-700/50 hover:bg-slate-600 active:bg-slate-500 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800 min-h-[44px]"
+                              aria-label={`Add ${session.title} to calendar`}
+                            >
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                              </svg>
+                              Add to Calendar
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -748,15 +829,15 @@ export default function GamiCon48VSchedule() {
       {/* Footer */}
       <footer className="relative z-10 px-4 py-8 border-t border-slate-700">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-slate-400 text-sm">
+          <div className="text-slate-300 text-sm">
             © 2026 Sententia Gamification. All rights reserved.
           </div>
           <div className="flex gap-6">
-            <a href="https://www.linkedin.com/company/gamicon" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded">
-              LinkedIn
+            <a href="https://www.linkedin.com/company/gamicon" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded">
+              LinkedIn<span className="sr-only"> (opens in new tab)</span>
             </a>
           </div>
-          <div className="text-slate-400 text-sm">
+          <div className="text-slate-300 text-sm">
             #GameBasedLearning
           </div>
         </div>
